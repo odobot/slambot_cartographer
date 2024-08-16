@@ -23,7 +23,7 @@ def generate_launch_description():
                                    'rviz', 'tb3_cartographer.rviz')
     
     urdf_file = os.path.join(
-        get_package_share_directory('slambot_cartographer'), 'urdf', 'bot.urdf.xacro')
+        get_package_share_directory('slambot_cartographer'), 'urdf', 'bot.urdf')
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -81,7 +81,7 @@ def generate_launch_description():
             package='rviz2',
             executable='rviz2',
             name='rviz2',
-            # arguments=['-d', rviz_config_dir],
+            arguments=['-d', rviz_config_dir],
             parameters=[{'use_sim_time': use_sim_time}],
             output='screen'),
     ])

@@ -2,8 +2,8 @@
 <robot name="slambot_description"
     xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:include filename="$(find slambot_description)/urdf/materials.xacro" />
-    <xacro:include filename="$(find slambot_description)/urdf/bot.trans" />
+    <xacro:include filename="$(find slambot_cartographer)/urdf/materials.xacro" />
+    <!-- <xacro:include filename="$(find slambot_cartographer)/urdf/bot.trans" /> -->
 
     <xacro:macro name="gazebo_description" params="link color">
         <gazebo reference="${link}">
@@ -24,14 +24,14 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -47,14 +47,14 @@
         <visual>
             <origin xyz="0.061083 0.088085 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.061083 0.088085 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -70,14 +70,14 @@
         <visual>
             <origin xyz="-0.088917 0.088085 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.088917 0.088085 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -93,14 +93,14 @@
         <visual>
             <origin xyz="-0.036417 -0.126915 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_3.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.036417 -0.126915 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_3.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -116,14 +116,14 @@
         <visual>
             <origin xyz="0.008583 -0.126915 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_4.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.008583 -0.126915 -0.002998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top2BottomSupport_v1_4.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top2BottomSupport_v1_4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -139,14 +139,14 @@
         <visual>
             <origin xyz="-0.088917 0.088085 -0.053998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.088917 0.088085 -0.053998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Top_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Top_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -162,14 +162,14 @@
         <visual>
             <origin xyz="-0.033917 0.048085 -0.053998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/20V_Battery_Holder_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/20V_Battery_Holder_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.033917 0.048085 -0.053998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/20V_Battery_Holder_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/20V_Battery_Holder_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -185,14 +185,14 @@
         <visual>
             <origin xyz="0.053583 0.050085 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_Bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_Bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.053583 0.050085 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_Bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_Bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -208,14 +208,14 @@
         <visual>
             <origin xyz="-0.095417 0.066085 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_Bracket_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_Bracket_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.095417 0.066085 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_Bracket_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_Bracket_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -231,14 +231,14 @@
         <visual>
             <origin xyz="-0.103117 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_GM25-370_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_GM25-370_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.103117 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_GM25-370_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_GM25-370_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -254,14 +254,14 @@
         <visual>
             <origin xyz="0.075283 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_GM25-370_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_GM25-370_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.075283 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Motor_GM25-370_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Motor_GM25-370_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -277,14 +277,14 @@
         <visual>
             <origin xyz="-0.110367 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/RC_coupling_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/RC_coupling_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.110367 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/RC_coupling_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/RC_coupling_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -300,14 +300,14 @@
         <visual>
             <origin xyz="0.082533 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/RC_coupling_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/RC_coupling_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.082533 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/RC_coupling_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/RC_coupling_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -323,14 +323,14 @@
         <visual>
             <origin xyz="0.100283 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/85mm_Wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/85mm_Wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.100283 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/85mm_Wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/85mm_Wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <surface>
                 <friction>
@@ -354,14 +354,14 @@
         <visual>
             <origin xyz="-0.128117 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/85mm_Wheel_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/85mm_Wheel_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.128117 0.058085 0.024002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/85mm_Wheel_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/85mm_Wheel_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <surface>
                 <friction>
@@ -385,14 +385,14 @@
         <visual>
             <origin xyz="-0.041917 -0.026915 -0.058998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/lidarBase_v2_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/lidarBase_v2_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.041917 -0.026915 -0.058998" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/lidarBase_v2_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/lidarBase_v2_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -409,14 +409,14 @@
         <visual>
             <origin xyz="-0.081917 -0.072915 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/CastorWheel_Socks_v3_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/CastorWheel_Socks_v3_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.081917 -0.072915 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/CastorWheel_Socks_v3_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/CastorWheel_Socks_v3_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -433,14 +433,14 @@
         <visual>
             <origin xyz="0.054083 -0.072915 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/CastorWheel_Socks_v3_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/CastorWheel_Socks_v3_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="0.054083 -0.072915 0.003002" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/CastorWheel_Socks_v3_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/CastorWheel_Socks_v3_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -456,14 +456,14 @@
         <visual>
             <origin xyz="0.054083 -0.072915 0.028202" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Swivel_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Swivel_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque180180180"/>
         </visual>
         <collision>
             <origin xyz="0.054083 -0.072915 0.028202" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Swivel_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Swivel_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -479,14 +479,14 @@
         <visual>
             <origin xyz="-0.081917 -0.072915 0.028202" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Swivel_plate_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Swivel_plate_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque180180180"/>
         </visual>
         <collision>
             <origin xyz="-0.081917 -0.072915 0.028202" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Swivel_plate_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Swivel_plate_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -502,14 +502,14 @@
         <visual>
             <origin xyz="-0.066917 -0.084915 0.034502" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_support_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_support_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque180180180"/>
         </visual>
         <collision>
             <origin xyz="-0.066917 -0.084915 0.034502" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_support_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_support_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -525,14 +525,14 @@
         <visual>
             <origin xyz="0.039083 -0.084915 0.034502" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_support_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_support_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque180180180"/>
         </visual>
         <collision>
             <origin xyz="0.039083 -0.084915 0.034502" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_support_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_support_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -548,14 +548,14 @@
         <visual>
             <origin xyz="-0.058117 -0.069415 0.053302" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_30mm_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_30mm_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque255255255"/>
         </visual>
         <collision>
             <origin xyz="-0.058117 -0.069415 0.053302" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_30mm_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_30mm_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -571,21 +571,21 @@
         <visual>
             <origin xyz="0.047883 -0.069415 0.053302" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_30mm_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_30mm_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque255255255"/>
         </visual>
         <collision>
             <origin xyz="0.047883 -0.069415 0.053302" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/Caster_40mm_Wheel_30mm_v1_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/Caster_40mm_Wheel_30mm_v1_2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
     <!-- <xacro:gazebo_description link="Caster_40mm_Wheel_30mm_v1_2" color="Gazebo/White"/> -->
 
-    <link name="LidarTop_v1_1">
+    <link name="laser">
         <inertial>
             <origin xyz="-0.00023825807528363684 -0.00028540122623983005 0.013754821872220838" rpy="0 0 0"/>
             <mass value="0.8072969283155749"/>
@@ -594,14 +594,14 @@
         <visual>
             <origin xyz="-0.013917 -0.054915 -0.088598" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/LidarTop_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/LidarTop_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="opaque202209238"/>
         </visual>
         <collision>
             <origin xyz="-0.013917 -0.054915 -0.088598" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="package://slambot_description/meshes/LidarTop_v1_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://slambot_cartographer/meshes/LidarTop_v1_1.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -753,7 +753,7 @@
     <joint name="Rigid 21" type="fixed">
         <origin xyz="-0.028 0.028 0.0296" rpy="0 0 0"/>
         <parent link="lidarBase_v2_1"/>
-        <child link="LidarTop_v1_1"/>
+        <child link="laser"/>
     </joint>
 
 </robot>
