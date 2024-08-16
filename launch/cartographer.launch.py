@@ -23,7 +23,7 @@ def generate_launch_description():
                                    'rviz', 'tb3_cartographer.rviz')
     
     urdf_file = os.path.join(
-        get_package_share_directory('slambot_cartographer'), 'urdf', 'bot.urdf')
+        get_package_share_directory('slambot_cartographer'), 'urdf', 'bot.urdf.xacro')
 
     return LaunchDescription([
         DeclareLaunchArgument(
